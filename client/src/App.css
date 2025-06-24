@@ -1,0 +1,9 @@
+.vehicle-marker {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mapboxgl-popup-content {
+  padding: 0 !important;
+  background: white;
+  border-radius: 6px;
+}
