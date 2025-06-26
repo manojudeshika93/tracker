@@ -54,13 +54,15 @@ src/
 ├── assets/              # Location icon, other assets
 ├── components/
 │   └── VehiclePopup.tsx # Marker popup UI for vehicle info
+├── screens/
+│   └── LiveTracker.tsx  # Live Tracker screen
 ├── services/
 │   └── socket.ts        # WebSocket logic (connect, subscribe, etc.)
 ├── store/
 │   ├── index.ts         # Redux store config
 │   └── vehicleSlice.ts  # Vehicle state & reducer logic
 ├── App.tsx              # Main component with Mapbox + marker logic
-├── main.tsx             # App bootstrapper
+├── main.tsx             # App boot-strapper
 
 ### Data Flow
 

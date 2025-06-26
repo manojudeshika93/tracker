@@ -14,7 +14,7 @@ interface VehicleState {
 }
 
 const initialState: VehicleState = {
-  plate: "DXB-CX-36357",
+  plate: "DXB-CX-36357", // Example plate number to track only one vehicle, replace with actual data
   status: "",
   position: { lat: 0, lng: 0 },
   angle: 0,
@@ -54,7 +54,7 @@ const calculateDistance = (
   lng2: number
 ): number => {
   const toRad = (value: number) => (value * Math.PI) / 180;
-  const R = 6371e3; // metres
+  const R = 6371e3; // meters
   const φ1 = toRad(lat1);
   const φ2 = toRad(lat2);
   const Δφ = toRad(lat2 - lat1);
@@ -67,7 +67,7 @@ const calculateDistance = (
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   const d = R * c;
 
-  return d; // in meters
+  return d; // meters
 };
 
 export const { updateVehicleData } = vehicleSlice.actions;
